@@ -1,0 +1,39 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block body_block %}
+<center>
+
+<div class="parents-reg m-5 ml-5 mr-5 p-5" style="border: 2px solid black; border-radius: 15px;">
+  <h1 class="pb-4 pt-0">Parent Registration Form</h1>
+  <div class="w-100">
+    <form method="post">
+    {% csrf_token %}
+    <b>{{ f.as_p }}</b>
+    <button type="submit"  class="button-style">Submit</button>
+  </form>
+  </div>
+</div>
+</center>
+{% endblock %}
+
+
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block body_block %}
+<center>
+
+<div class="parents-reg m-5 ml-5 mr-5 p-5" style="border: 2px solid black; border-radius: 15px;">
+  <h1 class="pb-4 pt-0">Parent Registration Form</h1>
+  <div class="w-100">
+    <form method="post">
+    {% csrf_token %}
+    <b>{{ f.as_p }}</b>
+    <button type="submit"  class="button-style">Submit</button>
+  </form>
+  </div>
+</div>
+</center>
+{% endblock %}
+

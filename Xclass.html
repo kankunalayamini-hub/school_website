@@ -1,0 +1,193 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block body_block %}
+
+
+<!-- ABOUT SECTION -->
+<section class="container py-5">
+  <h3 class="section-title text-center">Welcome to X class</h3>
+  <p class='text-center'>Preparing students for their board examinations</p>
+  <p class="text-center">The X class program focuses on preparing students for their <span style="font-weight:bold">board examinations</span> through structured academic training, regular assessments, and concept-basedlearning. Our experienced teachers guide students in mathematics, science,and languages to ensure strong academic performance and confidence.</p>
+</section>
+<!--image section -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-12 p-3">
+      <img src="{% static 'images/10th-1.jpeg' %}" alt=" image" class ="w-100">
+    </div>
+    <div class="col-md-4 col-12 p-3">
+      <img src="{% static 'images/10th-2.jpg' %}" alt=" image" class ="w-100">
+    </div>
+    <div class="col-md-4 col-12 p-3">
+      <img src="{% static 'images/10th-3.jpg' %}" alt=" image" class ="w-100">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-12 p-3">
+      <img src="{% static 'images/10th-4.jpg' %}" alt=" image" class ="w-100">
+    </div>
+    <div class="col-md-4 col-12 p-3">
+      <img src="{% static 'images/10th-5.jpg' %}" alt=" image" class ="w-100">
+    </div>
+    <div class="col-md-4 col-12 p-3">
+      <img src="{% static 'images/8th-3.jpeg' %}" alt=" image" class ="w-100">
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO -->
+<section class="container py-4">
+  <h3 class="section-title text-center">Class Introduction</h3>
+  <div class="row justify-content-center">
+    <div class="col-md-8 video-box">
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBJECTS -->
+<section class="container py-5">
+  <h3 class="section-title text-center">Subjects</h3>
+  <div class="row">
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card subject-card text-center p-3">
+        <i class="bi bi-calculator fs-1 text-dark"></i>
+        <h5>Mathematics</h5>
+        <p>Advanced problem solving</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card subject-card text-center p-3">
+        <i class="bi bi-lightbulb fs-1 text-dark"></i>
+        <h5>Science</h5>
+        <p>Physics, Chemistry, Biology basics</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card subject-card text-center p-3">
+        <i class="bi bi-laptop fs-1 text-dark"></i>
+        <h5>Computer</h5>
+        <p>Python & Web basics</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card subject-card text-center p-3">
+        <i class="bi bi-book fs-1 text-dark"></i>
+        <h5>English</h5>
+        <p>Communication & grammar</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<!--footer section-->
+<div class = 'div text-center'>
+    <h5>still Hunting for a job?</h5>
+    <p>Elearn Infotech is a Realtime Training Comany offering Cousre on varied IT Technologies like Fullstack Development,python,React JS,Node JS,Web Design & PHP with MYSQL,Digital Marketing</p>
+    <button class ='button-style'><a href="{% url 'contact_us' %}"> Register</a></button>
+</div>
+</center>
+
+{% endblock %}
+
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block body_block %}
+
+
+<!-- ABOUT SECTION -->
+<section class="container py-5">
+  <h3 class="section-title text-center">Welcome to X class</h3>
+  <p class='text-center'>Preparing students for their board examinations</p>
+  <p class="text-center">The X class program focuses on preparing students for their <span style="font-weight:bold">board examinations</span> through structured academic training, regular assessments, and concept-basedlearning. Our experienced teachers guide students in mathematics, science,and languages to ensure strong academic performance and confidence.</p>
+</section>
+<!--image section -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-12 p-3">
+      <img src="{% static 'images/10th-1.jpeg' %}" alt=" image" class ="w-100">
+    </div>
+    <div class="col-md-4 col-12 p-3">
+      <img src="{% static 'images/10th-2.jpg' %}" alt=" image" class ="w-100">
+    </div>
+    <div class="col-md-4 col-12 p-3">
+      <img src="{% static 'images/10th-3.jpg' %}" alt=" image" class ="w-100">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-12 p-3">
+      <img src="{% static 'images/10th-4.jpg' %}" alt=" image" class ="w-100">
+    </div>
+    <div class="col-md-4 col-12 p-3">
+      <img src="{% static 'images/10th-5.jpg' %}" alt=" image" class ="w-100">
+    </div>
+    <div class="col-md-4 col-12 p-3">
+      <img src="{% static 'images/8th-3.jpeg' %}" alt=" image" class ="w-100">
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO -->
+<section class="container py-4">
+  <h3 class="section-title text-center">Class Introduction</h3>
+  <div class="row justify-content-center">
+    <div class="col-md-8 video-box">
+      <div class="ratio ratio-16x9">
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBJECTS -->
+<section class="container py-5">
+  <h3 class="section-title text-center">Subjects</h3>
+  <div class="row">
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card subject-card text-center p-3">
+        <i class="bi bi-calculator fs-1 text-dark"></i>
+        <h5>Mathematics</h5>
+        <p>Advanced problem solving</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card subject-card text-center p-3">
+        <i class="bi bi-lightbulb fs-1 text-dark"></i>
+        <h5>Science</h5>
+        <p>Physics, Chemistry, Biology basics</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card subject-card text-center p-3">
+        <i class="bi bi-laptop fs-1 text-dark"></i>
+        <h5>Computer</h5>
+        <p>Python & Web basics</p>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4">
+      <div class="card subject-card text-center p-3">
+        <i class="bi bi-book fs-1 text-dark"></i>
+        <h5>English</h5>
+        <p>Communication & grammar</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</section>
+
+<!--footer section-->
+<div class = 'div text-center'>
+    <h5>still Hunting for a job?</h5>
+    <p>Elearn Infotech is a Realtime Training Comany offering Cousre on varied IT Technologies like Fullstack Development,python,React JS,Node JS,Web Design & PHP with MYSQL,Digital Marketing</p>
+    <button class ='button-style'><a href="{% url 'contact_us' %}"> Register</a></button>
+</div>
+</center>
+
+{% endblock %}
