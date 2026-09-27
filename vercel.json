@@ -19,7 +19,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "educational_website-main/wsgi.py"
+      "dest": "educational_website/wsgi.py"
     }
   ]
 }
