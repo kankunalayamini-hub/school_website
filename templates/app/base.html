@@ -26,7 +26,7 @@
     <div class="collapse navbar-collapse" id="menu">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-            <a class="nav-link active text-white" href="/home">HOME</a>
+            <a class="nav-link active text-white" href="{% url 'home' %}">HOME</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Classes</a>
@@ -45,16 +45,16 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="/parent_reg">PARENT_REG</a>
+            <a class="nav-link text-white" href="{% url 'parent_reg' %}">PARENT_REG</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="/latest_news">LATEST_NEWS</a>
+            <a class="nav-link text-white" href="{% url 'latest_news' %}">LATEST_NEWS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="/contact_us">CONTACT US</a>
+            <a class="nav-link text-white" href="{% url 'contact_us' %}">CONTACT US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="/table">DATABASE</a>
+            <a class="nav-link text-white" href="{% url 'table' %}">DATABASE</a>
           </li>
         </ul>
       </div>

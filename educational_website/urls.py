@@ -28,7 +28,7 @@ urlpatterns = [
     path('photos/', views.photosview, name="photos"),
     path('videos/', views.videosview, name="videos"),
     path('parent_reg/', views.parent_regview, name='parent_reg'),
-    path('latest_news/', views.latest_newsview),
+    path('latest_news/', views.latest_newsview, name="latest_news"),
     path('contact_us/', views.contactview, name="contact_us"),
-    path('data/',views.Dataview),
+    path('data/', views.Dataview, name="data"),
 ]

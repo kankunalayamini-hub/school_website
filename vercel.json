@@ -2,15 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "educational_project/wsgi.py",
-      "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.11" }
+      "src": "educational_website/wsgi.py",
+      "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "educational_project/wsgi.py"
+      "dest": "educational_website/wsgi.py"
     }
   ]
 }
