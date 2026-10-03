@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Website</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container-fluid">
+    <div class="d-flex flex-row">
+      <img src="{% static 'images/school-logo.jpg' %}" alt="Logo" width="40" height="40" style="border-radius: 50%;margin-right: 6px;">
+    <a class="navbar-brand pt-2" href="#"><h5>Narayana School</h5></a>
+    </div>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+            <a class="nav-link active text-white" href="/home">HOME</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Classes</a>
+            <ul class="dropdown-menu"><b>
+              <li><a class="dropdown-item text-black" href="{% url 'VIIIclass' %}">VIII Class</a></li>
+              <li><a class="dropdown-item text-black" href="{% url 'IXclass' %}">IX Class</a></li>
+              <li><a class="dropdown-item text-black" href="{% url 'Xclass' %}">X Class</a></li></b>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Gallery</a>
+            <ul class="dropdown-menu"><b>
+              <li><a class="dropdown-item" href="{% url 'photos' %}">Photos</a></li>
+              <li><a class="dropdown-item" href="{% url 'videos' %}">Videos</a></li>
+              </b>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/parent_reg">PARENT_REG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/latest_news">LATEST_NEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/contact_us">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/table">DATABASE</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+{%block body_block%}
+{%endblock%}
+</body>
+</html>

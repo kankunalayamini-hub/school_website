@@ -1,0 +1,102 @@
+{% extends "app/base.html" %}
+{%load static%}
+{%block body_block%}
+
+<div class="container">
+  <h2 class="page-title">Latest News</h2>
+  <div class="row mt-4">
+    <!-- News 1 -->
+     <div class="col-md-4 mb-4">
+      <div class="card news-card">
+        <img src="{% static 'images/latest-1.jpg' %}" class="card-img-top news-img">
+        <div class="card-body">
+          <h5 class="card-title">Science Exhibition</h5>
+          <p class="card-text">Students participated in the annual science exhibition and presented innovative projects.</p>
+          <p class="text-muted">March 2026</p>
+        </div>
+      </div>
+    </div>
+    <!-- News 2 -->
+     <div class="col-md-4 mb-4">
+      <div class="card news-card">
+        <img src="{% static 'images/latest-2.jpg' %}" class="card-img-top news-img">
+        <div class="card-body">
+          <h5 class="card-title">Sports Day Celebration</h5>
+          <p class="card-text">Our annual sports day was conducted with exciting competitions and prizes.</p>
+          <p class="text-muted">February 2026</p>
+        </div>
+      </div>
+    </div>
+    <!-- News 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card news-card">
+        <img src="{% static 'images/latest-3.jpg' %}" class="card-img-top news-img">
+        <div class="card-body">
+          <h5 class="card-title">Coding Workshop</h5>
+          <p class="card-text">Students attended a Python coding workshop conducted by industry experts.</p>
+          <p class="text-muted">January 2026</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--footer section -->
+<div class = 'div text-center'>
+  <h5>still Hunting for a job?</h5>
+  <p>Elearn Infotech is a Realtime Training Comany offering Cousre on varied IT Technologies like Fullstack Development,python,React JS,Node JS,Web Design & PHP with MYSQL,Digital Marketing</p>
+  <button class ='button-style'><a href="{% url 'contact_us' %}"> Register</a></button>
+</div>
+
+{%endblock%}
+{% extends "app/base.html" %}
+{%load static%}
+{%block body_block%}
+
+<div class="container">
+  <h2 class="page-title">Latest News</h2>
+  <div class="row mt-4">
+    <!-- News 1 -->
+     <div class="col-md-4 mb-4">
+      <div class="card news-card">
+        <img src="{% static 'images/latest-1.jpg' %}" class="card-img-top news-img">
+        <div class="card-body">
+          <h5 class="card-title">Science Exhibition</h5>
+          <p class="card-text">Students participated in the annual science exhibition and presented innovative projects.</p>
+          <p class="text-muted">March 2026</p>
+        </div>
+      </div>
+    </div>
+    <!-- News 2 -->
+     <div class="col-md-4 mb-4">
+      <div class="card news-card">
+        <img src="{% static 'images/latest-2.jpg' %}" class="card-img-top news-img">
+        <div class="card-body">
+          <h5 class="card-title">Sports Day Celebration</h5>
+          <p class="card-text">Our annual sports day was conducted with exciting competitions and prizes.</p>
+          <p class="text-muted">February 2026</p>
+        </div>
+      </div>
+    </div>
+    <!-- News 3 -->
+    <div class="col-md-4 mb-4">
+      <div class="card news-card">
+        <img src="{% static 'images/latest-3.jpg' %}" class="card-img-top news-img">
+        <div class="card-body">
+          <h5 class="card-title">Coding Workshop</h5>
+          <p class="card-text">Students attended a Python coding workshop conducted by industry experts.</p>
+          <p class="text-muted">January 2026</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--footer section -->
+<div class = 'div text-center'>
+  <h5>still Hunting for a job?</h5>
+  <p>Elearn Infotech is a Realtime Training Comany offering Cousre on varied IT Technologies like Fullstack Development,python,React JS,Node JS,Web Design & PHP with MYSQL,Digital Marketing</p>
+  <button class ='button-style'><a href="{% url 'contact_us' %}"> Register</a></button>
+</div>
+
+{%endblock%}

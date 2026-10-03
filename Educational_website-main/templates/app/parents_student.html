@@ -1,0 +1,25 @@
+{% extends "app/base.html" %}
+{%load static%}
+{%block body_block %}
+
+<!-- registration form -->
+<div class="container py-5">
+  <form method="post" class = 'cf'>
+    {% csrf_token %}
+    <b>{{ fo.as_p }}</b>
+    <button type="submit"  class="button-style">Submit</button>
+  </form>
+</div>
+
+
+<button type="submit" class="btn btn-register">
+Register
+</button>
+<!--footer section-->
+<div class = 'div  text-center'>
+    <h5>still Hunting for a job?</h5>
+    <p>Elearn Infotech is a Realtime Training Comany offering Cousre on varied IT Technologies like Fullstack Development,python,React JS,Node JS,Web Design & PHP with MYSQL,Digital Marketing</p>
+    <button class ='button-style'><a href="{% url 'contact_us' %}"> Register</a></button>
+</div>
+
+{% endblock %}

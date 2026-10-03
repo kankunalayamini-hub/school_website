@@ -1,29 +1,21 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
 
 # Virtual environment
 venv/
 env/
 .venv/
 
-# Django
-db.sqlite3
-staticfiles/
-
 # Environment variables
 .env
 
-# IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-__pycache__/
-*.pyc
+# Django
 db.sqlite3
 
+# Generated static files
+staticfiles_build/
+staticfiles/
+
+# IDE
+.vscode/

@@ -1,0 +1,17 @@
+{% extends "app/base.html" %}
+{%load static%}
+{%block body_block %}
+<center>
+<h2>Update form</h2>
+<form method="'POST">
+    {% csrf_token %}
+    Ename <input type="text" name="name" value="{{f.name}}"></br>
+    Phone <input type="text" name="phone" value="{{f.phone}}"></br>
+    Email <input type="text" name="email" value="{{f.email}}"></br>
+    Student name <input type="text" name="ename" value="{{f.stname}}"></br>
+    MSG <input type="text" name="msg" value="{{f.msg}}"></br>
+    <a href='#'><button>submit</button></a>
+
+</form>
+</center>
+{% endblock %}
